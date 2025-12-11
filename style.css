@@ -1,0 +1,123 @@
+nav{
+ display: flex;
+gap:10px;
+padding-left:10px;
+ height:fit-content;
+}
+nav a{
+   font-size:18px;
+   text-decoration:none;
+   color:black; 
+   transition: border-bottom 0.5s ease;
+}
+nav a:visited{
+    color:black;
+    text-decoration:none;
+}
+
+nav a:hover{
+    border-bottom: 2px solid black;
+
+}
+#aboutbody{
+display:flex;
+ min-height:100vh;
+ max-width:100vw;
+flex-direction:column;
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:200;
+    font-size:40px;
+  
+}
+h4{
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size:25px;  
+}
+header{
+    background-color:#f3f4f8;
+    padding:10px;
+    box-shadow: 0px 2px 4px 0.5px#989898;
+    height:fit-content;
+}
+body{
+    font-family: Helvetica, sans-serif;
+      margin: 0;
+    padding: 0;
+}
+
+button {
+            display: inline-block;
+            background-color: #000000;
+            color: #fff;
+            width:150px;
+            height:50px;
+            font-size:18px;
+            transition: background-color 0.3s ease;
+            box-shadow:none;
+            border:none;
+        }
+
+button:hover {
+            background-color: #8dbed8;
+                transform: scale(1.05);
+        }
+
+#about{
+    display: flex;
+    width:70vw;
+    justify-content: center; 
+ 
+
+}
+.main{
+display:flex;
+align-items:center;
+ flex-direction: column;
+padding:20px;
+}
+footer{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    /* margin-top:100px; */
+    max-height:fit-content;
+     margin-top: auto;
+     margin-bottom:20px;
+}
+.desc{
+display:flex;
+padding:20px;
+width:50vw;
+text-align:center;
+}
+
+
+.review {
+    opacity: 0;
+    transition: opacity 3s ease;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.reviews {
+    position: relative;
+    min-height: 120px;
+    justify-content:center;
+    align-items:center;
+    width:60vw;
+    padding:10px;
+    margin-bottom:100px;
+}
+
+.review.active {
+    opacity: 1;
+}
+
+.stars {
+    color: #e0a424;
+    font-size: 14px;
+    margin: 0.3rem 0;
+}

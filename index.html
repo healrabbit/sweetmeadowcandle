@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sweetmeadow Candle Company</title>
+         <link rel="stylesheet" href ="style.css">
+</head>
+<body>
+<header> 
+ <center> <img src="sweetmeadowcandlelogo.png" style="width:60vw"> </center> 
+
+   <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Story</a>
+        <a href="testimonials.html">Testimonials</a>
+    </nav>
+    </header>
+    <div class="main"> 
+    <div>    <h1> Sweet Linen</h1> </div>
+      <center><div> <img src="sweetlinen2.png" style="height:40vh"></div> </center> 
+        <div class="desc"><p> Sweetmeadow's first candle. Clean cotton, with hints of Lavender and Baby's Breath, evokes memories of crisp sheets and warm spring days. Ideal for any space. </p> </div>
+       <a href="test.html"> <button > Add to Cart</button></a> 
+    </div>
+
+         <center> <div class="reviews">
+             <center>  <h4>Reviews:</h4> </center>
+                <div class="review active">
+                    <strong>Amelia R.</strong>
+                    <div class="stars">★★★★★</div>
+                    <em>"Truly the best candle I have ever smelled. So cozy, will be sure to stock up for the holidays!"</em>
+                </div>
+                <div class="review">
+                    <strong>Jonathan P.</strong>
+                    <div class="stars">★★★★★</div>
+                    <em>"Perfect gift for my wife!"</em>
+                </div>
+                <div class="review">
+                    <strong>Sofia M.</strong>
+                    <div class="stars">★★★★★</div>
+                    <em>"I have never left a review in my life but this candle is genuinely insane. Please release this scent as a room spray or something, I want to smell it everywhere I go."</em>
+                </div>
+            </div> </center>    
+        </div>
+
+<script>
+const reviews = document.querySelectorAll('.review');
+let index = 0;
+
+// make sure the first one is visible
+reviews[index].classList.add('active');
+
+setInterval(() => {
+    // fade OUT current review
+    reviews[index].classList.remove('active');
+
+    // move to the next review
+    index = (index + 1) % reviews.length;
+
+    // fade IN next review
+    reviews[index].classList.add('active');
+}, 4000);
+</script>
+
+
+    <footer>
+   <center>  <p> &copy; 2025 Sweet Meadow Candle Co. All rights reserved. </p>  </center>  
+    </footer>
+</body>
+</html>
